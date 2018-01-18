@@ -37,4 +37,9 @@ def position_taken?(board, index)
 
 def turn(board)
   puts "Please enter 1-9:"
+  if input_to_index == true || position_taken? == true || valid_move? == true
+    do move
+ else
+   do turn(board)
+ end
 end
