@@ -37,6 +37,7 @@ def position_taken?(board, index)
 
 def turn(board)
   puts "Please enter 1-9:"
+  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   if input_to_index == true || position_taken? == true || valid_move? == true
     do move(array, index, value = "X")
  else
