@@ -41,7 +41,7 @@ def turn(board)
   index = input_to_index(input)
   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
   if input_to_index(input) == true || position_taken?(board, index) == true || valid_move?(board, index) == true
-     move(board)
+     move(board, index, value = "X")
  else
     turn(board)
  end
